@@ -1,0 +1,176 @@
+/*=====**Mahdi meydan miri**=====*/
+/*
+=================================================
+=================   Reset Css   =================
+=================================================
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+html{
+    box-sizing: border-box;
+    font-size: 62.5%; /* 10px(best for search engine font size) */
+}
+*, *:after, *:before{
+    box-sizing: inherit;
+}
+@font-face {
+	font-family: Poppins-SemiBold;
+	src: url(../assest/font/Poppins-SemiBold.ttf) format("truetype");
+}
+@font-face {
+	font-family: Poppins-Light;
+	src: url(../assest/font/Poppins-Light.ttf) format("truetype");
+}
+input{
+	width: 100%;
+	height: 35px;
+	border: 1px solid;
+	border-radius: 6px;
+	text-align: center;
+	font-family: Poppins-Light;
+	background-color: #dfdfdfef;
+}
+select{
+	width: 100%;
+	height: 35px;
+	background-color: #48CFCB;
+	border-radius: 6px;
+	text-align: center;
+	font-family: Poppins-Light;
+}
+.main-container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+	font-size: 24px;
+}
+.container{
+	width: 420px;
+	height: 580px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: start;
+    background-color: #424242;
+	padding: 50px 30px;
+	border-radius: 14px;
+	background: rgba(66, 66, 66, 0.78);
+	border-radius: 16px;
+	box-shadow:2px 0px 25px #27878a86;
+	backdrop-filter: blur(11.2px);
+	-webkit-backdrop-filter: blur(11.2px);
+}
+.container__item{
+	text-align: start;
+	display: flex;
+	flex-direction: column;
+	gap: 45px;
+	width: 100%;
+	margin-bottom: 40px;
+}
+.container__item__input{
+	display: flex;
+	align-items: center;
+	gap: 30px;
+}
+.container__item__input__text{
+    height: 35px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: right;
+    padding: 0 10px;
+	font-size: 16px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.container__item__title{
+	width: 50%;
+	text-align: center;
+	font-family: Poppins-SemiBold;
+	color: #229799;
+}
+.container__btn{
+
+}
+.container__btn__conversion{
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 150px;
+	height: 50px;
+	border-radius: 26px;
+	font-size: 18px;
+	background-color: #00000061;
+	color: #229799;
+	font-family: Poppins-SemiBold;
+	box-shadow: 1px 1px 15px #2297995d;
+	margin-bottom: 30px;
+}
+.container__answer{
+	border-radius: 8px;
+}
+#particles-js {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #005556;
+    z-index: -1;
+}
+.container__answer__number{
+	background-color: #00000061;
+	margin-top: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #229799;
+	padding: 5px;
+	border-radius: 6px;
+	box-shadow: 1px 1px 15px #39fcff80;
+}

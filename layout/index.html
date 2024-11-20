@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body class="main-container">
+    <div id="particles-js"></div>
+    <div class="container">
+        <div class="container__item">
+            <div class="container__item__input">
+                <span class="container__item__title">quantity</span>
+                <select name="Units" id="Units-id">
+                    <option value="Length">Length</option>
+                    <option value="Weight">Weight</option>
+                    <option value="Area">Area</option>
+                </select>
+            </div>
+            <div class="container__item__input">
+                <span class="container__item__title">amount</span>
+                <input type="number" id="input-number" placeholder="Enter the number">
+            </div>
+            <div class="container__item__input">
+                <span class="container__item__title">from</span>
+                <select name="fromUnits__length" id="fromUnits-length-id">
+                    <option value="Meter">Meter</option>
+                    <option value="Kilometer">Kilometer</option>
+                    <option value="Centimeter">Centimeter</option>
+                    <option value="Mile">Mile</option>
+                </select>
+                <select name="fromUnits__weight" id="fromUnits-weight-id">
+                    <option value="Gram">Gram</option>
+                    <option value="Kilogram">Kilogram</option>
+                    <option value="Pound">Pound</option>
+                    <option value="Ounce">Ounce</option>
+                </select>
+                <select name="fromUnits__area" id="fromUnits-area-id">
+                    <option value="Square Meter">Square Meter</option>
+                    <option value="Acre">Acre</option>
+                    <option value="Hectare">Hectare</option>
+                    <option value="Square Kilometer">Square Kilometer</option>
+                </select>
+            </div>
+            <div class="container__item__input">
+                <span class="container__item__title">into</span>
+                <select name="intoUnits__length" id="intoUnits-length-id">
+                    <option value="Meter">Meter</option>
+                    <option value="Kilometer">Kilometer</option>
+                    <option value="Centimeter">Centimeter</option>
+                    <option value="Mile">Mile</option>
+                </select>
+                <select name="intoUnits__weight" id="intoUnits-weight-id">
+                    <option value="Gram">Gram</option>
+                    <option value="Kilogram">Kilogram</option>
+                    <option value="Pound">Pound</option>
+                    <option value="Ounce">Ounce</option>
+                </select>
+                <select name="intoUnits__area" id="intoUnits-area-id">
+                    <option value="Square Meter">Square Meter</option>
+                    <option value="Acre">Acre</option>
+                    <option value="Hectare">Hectare</option>
+                    <option value="Square Kilometer">Square Kilometer</option>
+                </select>
+            </div>
+        </div>
+        <div class="container__btn">
+            <div class="container__btn__conversion" id="btn-convert">Convert</div>
+        </div>
+        <div class="container__answer" id="answerContainer">
+            <span class="container__answer__number" id="answerSpan"></span>
+            <span class="container__answer__unit" id="answerUnitSpan"></span>
+        </div>
+    </div>
+    <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>
