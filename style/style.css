@@ -174,3 +174,53 @@ select{
 	border-radius: 6px;
 	box-shadow: 1px 1px 15px #39fcff80;
 }
+
+/* ======= Responsive for mobile phones (max-width: 480px) ======= */
+@media (max-width: 480px) {
+    .container {
+		width: 320px;
+		height: 540px;
+        min-height: 540px;
+        padding: 30px 15px;
+    }
+
+    .container__item {
+        gap: 25px;
+    }
+
+    .container__item__input {
+        gap: 10px;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .container__item__title {
+        font-size: 1.6rem;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+
+    input, select {
+        height: 30px;
+        font-size: 1.3rem;
+    }
+
+    .container__btn__conversion {
+        width: 130px;
+        height: 40px;
+        font-size: 1.5rem;
+    }
+
+    .container__answer__number {
+        font-size: 2rem;
+        padding: 3px;
+    }
+}
+
+/* ======= Responsive for very small phones (max-width: 360px) ======= */
+@media (max-width: 360px) {
+    .container {
+        width: 70%;
+    }
+}
